@@ -1,0 +1,42 @@
+{
+  "name": "aurelia-jspm",
+  "version": "1.0.0",
+  "description": "aurelia with jspm from scratch",
+  "main": "index.js",
+  "scripts": {
+    "clean": "gulp clean",
+    "bundle": "gulp bundle",
+    "inject": "gulp inject",
+    "unbundle": "gulp unbundle",
+    "prestart": "npm run clean && npm run bundle && npm run inject",
+    "start": "node server.js",
+    "inject:dev": "gulp inject:dev",
+    "prestart:dev": "npm run clean && npm run unbundle && npm run inject:dev",
+    "start:dev": "node server.js"
+  },
+  "author": "jeremy daniel bouvier",
+  "license": "MIT",
+  "dependencies": {
+    "jspm": "^0.16.45"
+  },
+  "jspm": {
+    "dependencies": {
+      "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0",
+      "aurelia-framework": "npm:aurelia-framework@^1.0.2",
+      "text": "github:systemjs/plugin-text@^0.0.8"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "devDependencies": {
+    "aurelia-bundler": "^0.4.0",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-inject-string": "^1.1.0",
+    "require-dir": "^0.3.0"
+  }
+}
