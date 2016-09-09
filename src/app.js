@@ -1,7 +1,9 @@
 import {Lambda} from './lambdaModule';
 export class App {
   constructor() {
-    this.message = 'Hello World of dev!';
+    var a = new Lambda();
+    var b = a.method();
+    this.message = `Hello World of dev! ${b}`;
     this.sayHello = () => { 
         var a = new Lambda();
         var b = a.method();
