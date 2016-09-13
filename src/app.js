@@ -1,4 +1,5 @@
 import {Lambda} from './lambdaModule';
+
 export class App {
   constructor() {
     var a = new Lambda();
