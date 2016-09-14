@@ -1,4 +1,4 @@
-import Lambda from "./Lambda";
+import Lambda from "Lambda";
 export default class App {
   constructor() {
     var a = new Lambda();

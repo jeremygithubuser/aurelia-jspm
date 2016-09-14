@@ -1,5 +1,8 @@
+import {Gamma} from "Greek";
 export default class Lambda{
   constructor() {
-    this.method = () => { return "this is from lambda method"; };
+    var a = new Gamma();
+    var b = a.method();
+    this.method = () => { return `this is from lambda method ${b}`; };
   }
 }

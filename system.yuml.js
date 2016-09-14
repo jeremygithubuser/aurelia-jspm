@@ -13,6 +13,8 @@ window.showModuleRelationships = function () {
         return module
             .replace("http://localhost:8080/src/", "")
             .replace("./", "")
+            .replace("Greek/index", "Greek")
+            .replace("Greek/", "")           
             .replace(".js", "");
     }
 

@@ -1,7 +1,7 @@
 import {ComponentTester} from "aurelia-testing";
 import {bootstrap} from "aurelia-bootstrapper";
-import App from "src/App.js";
-import appView from "src/App.html!text";
+import App from "App";
+import appView from "App.html!text";
 
 describe('AppComponent', () => {
   let component;
@@ -15,7 +15,7 @@ describe('AppComponent', () => {
     component.inView(appView.replace(/(^<template>|<\/template>$)/g,""));
     component.create(bootstrap).then(() => {
       const nameElement = document.querySelector("#appTitle");
-      expect(nameElement.innerHTML).toBe('Hello World of dev! this is from lambda method');
+      expect(nameElement.innerHTML).toBe('Hello World of dev! this is from lambda method this is from gamma method');
       done();
     });
   });
