@@ -11,11 +11,27 @@ describe('AppComponent', () => {
 
   it('should render The Title of the app', done => {
     component = new ComponentTester();
-    component.boundTo(new App());
-    component.inView(appView.replace(/(^<template>|<\/template>$)/g,""));
+    var sut = new App();
+    component.boundTo(sut);
+    component.inView(appView.replace(/(^<template>|<\/template>$)/g, ""));
     component.create(bootstrap).then(() => {
-      const nameElement = document.querySelector("#appTitle");
-      expect(nameElement.innerHTML).toBe('Hello World of dev! this is from lambda method this is from gamma method');
+      const titleElement = document.querySelector("#appTitle");
+      expect(titleElement.innerHTML).toBe("Hello World of dev! this is from lambda method this is from gamma method");
+      done();
+    });
+  });
+
+  it('should render The content of the app', done => {
+    component = new ComponentTester();
+    var sut = new App();
+    sut.content = "hey this is the content";
+    component.boundTo(sut);
+    component.inView(appView.replace(/(^<template>|<\/template>$)/g, ""));
+    component.create(bootstrap).then(() => {
+      const element = document.querySelector("#appContent");
+      console.log("app content");
+      console.log(element.innerHTML);
+      expect(element.innerHTML).toBe("hey this is the content");
       done();
     });
   });

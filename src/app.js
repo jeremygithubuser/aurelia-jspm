@@ -4,6 +4,7 @@ export default class App {
     var a = new Lambda();
     var b = a.method();
     this.message = `Hello World of dev! ${b}`;
+    this.content = "Hello content";
     this.sayHello = () => {
       var a = new Lambda();
       var b = a.method();
