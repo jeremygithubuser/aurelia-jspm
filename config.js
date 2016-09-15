@@ -214,7 +214,6 @@ System.config({
     "Greek": {
       "main": "index.js",
       "map": {
-        "Greek": "./index.js",
         "Gamma": "./Gamma.js",
         "Beta": "./Beta.js"
       }
