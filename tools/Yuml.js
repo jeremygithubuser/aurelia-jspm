@@ -1,13 +1,15 @@
+//import "babel-polyfill";
 /*Depends on Object.values check compatibility table*/
 System.trace = true;
-
 window.showModuleRelationships = function () {
     var modules = Object.keys(System.loads)
         .map(function (moduleName) {
             return System.loads[moduleName];
         })
         .filter(function (module) {
-            return module.name.substring(22, 25) === "src";
+            return (module.name.substring(22, 25) === "src")
+            ||(module.name.substring(22, 27) === "tools")
+            ||(module.name == "http://localhost:8080/jspm_packages/npm/babel-polyfill@6.13.0.js");
         })
 
     function displayName(module) {
@@ -17,7 +19,8 @@ window.showModuleRelationships = function () {
 
     var moduleDefinitions = modules.map(function (module) {
         var name = displayName(module.name);
-        return "[" + name + "]";
+        var format = module.metadata.format;
+        return "[" + name + "|" + format + "]";
     });
 
     var dependencyDefinitions = [];

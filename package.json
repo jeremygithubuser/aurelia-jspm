@@ -7,7 +7,7 @@
     "clean": "gulp clean",
     "lint": "jshint src tests",
     "unitTests": "karma start",
-    "integrationTests":"protractor protractor.conf.js",
+    "integrationTests": "protractor protractor.conf.js",
     "bundle": "gulp bundle",
     "inject": "gulp inject",
     "unbundle": "gulp unbundle",
@@ -26,6 +26,7 @@
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0",
       "aurelia-framework": "npm:aurelia-framework@^1.0.2",
       "aurelia-testing": "npm:aurelia-testing@^1.0.0-beta.2.0.0",
+      "babel-polyfill": "npm:babel-polyfill@^6.13.0",
       "text": "github:systemjs/plugin-text@^0.0.8"
     },
     "devDependencies": {

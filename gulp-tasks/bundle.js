@@ -16,7 +16,7 @@ var config = {
       ],
       options: {
         inject: true,
-        minify: false
+        minify: true
       }
     },
     "dist/vendor-build": {
