@@ -37,19 +37,33 @@ System.config({
   map: {
     "App": "src:App",
     "App.html": "src:App.html",
+    "Start": "src:Start",
+    "Start.html": "src:Start.html",
+    "List": "src:Movies/List",
+    "List.html": "src:Movies/List.html",
+    "Details": "src:Movies/Details",
+    "Details.html": "src:Movies/Details.html",
+    "About": "src:About/About",
+    "About.html": "src:About/About.html",
+    "MovieService": "src:Movies/MovieService",
     "Configure": "src:Configure",
+    "CurrentDate": "src:CurrentDate",
     "Greek": "src:Greek",
     "Lambda": "src:Lambda",
     "Yuml": "tools:Yuml",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0",
     "aurelia-framework": "npm:aurelia-framework@1.0.3",
+    "aurelia-http-client": "npm:aurelia-http-client@1.0.0",
     "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0",
     "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0",
     "aurelia-testing": "npm:aurelia-testing@1.0.0-beta.2.0.0",
     "babel": "npm:babel-core@5.8.38",
     "babel-polyfill": "npm:babel-polyfill@6.13.0",
     "babel-runtime": "npm:babel-runtime@5.8.38",
+    "bootstrap": "github:twbs/bootstrap@3.3.7",
     "core-js": "npm:core-js@1.2.7",
+    "css": "github:systemjs/plugin-css@0.1.27",
+    "jquery": "npm:jquery@3.1.0",
     "text": "github:systemjs/plugin-text@0.0.8",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
@@ -68,6 +82,9 @@ System.config({
     },
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
+    },
+    "github:twbs/bootstrap@3.3.7": {
+      "jquery": "npm:jquery@3.1.0"
     },
     "npm:assert@1.4.1": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
@@ -118,6 +135,10 @@ System.config({
     "npm:aurelia-history-browser@1.0.0": {
       "aurelia-history": "npm:aurelia-history@1.0.0",
       "aurelia-pal": "npm:aurelia-pal@1.0.0"
+    },
+    "npm:aurelia-http-client@1.0.0": {
+      "aurelia-pal": "npm:aurelia-pal@1.0.0",
+      "aurelia-path": "npm:aurelia-path@1.0.0"
     },
     "npm:aurelia-loader-default@1.0.0": {
       "aurelia-loader": "npm:aurelia-loader@1.0.0",

@@ -25,8 +25,12 @@
     "dependencies": {
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0",
       "aurelia-framework": "npm:aurelia-framework@^1.0.2",
+      "aurelia-http-client": "npm:aurelia-http-client@^1.0.0",
       "aurelia-testing": "npm:aurelia-testing@^1.0.0-beta.2.0.0",
       "babel-polyfill": "npm:babel-polyfill@^6.13.0",
+      "bootstrap": "github:twbs/bootstrap@^3.3.7",
+      "css": "github:systemjs/plugin-css@^0.1.27",
+      "jquery": "npm:jquery@^3.1.0",
       "text": "github:systemjs/plugin-text@^0.0.8"
     },
     "devDependencies": {

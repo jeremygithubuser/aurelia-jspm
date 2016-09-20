@@ -11,6 +11,7 @@ var config = {
       includes: [
         'App',
         'Configure',
+        'Yuml',
         'src:*.html!text',
         'src:*.css!text'
       ],
