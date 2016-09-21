@@ -11,16 +11,15 @@ System.config({
   },
   paths: {
     "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*",
-    "src:*": "src/*",
-    "tools:*": "tools/*"
+    "npm:*": "jspm_packages/npm/*"
   },
   packages: {
     "Greek": {
       "main": "index.js",
       "map": {
         "Gamma": "./Gamma.js",
-        "Beta": "./Beta.js"
+        "Beta": "./Beta.js",
+        "Lambda": "./Lambda.js"
       }
     }
   },
@@ -35,30 +34,30 @@ System.config({
     }
   },
   map: {
-    "About": "src:About/About",
-    "About.html": "src:About/About.html",
-    "App": "src:App",
-    "App.html": "src:App.html",
-    "Configure": "src:Configure",
-    "CurrentDate": "src:CurrentDate",
-    "Details": "src:Movies/Details",
-    "Details.html": "src:Movies/Details.html",
-    "Edit": "src:Movies/Edit",
-    "Edit.html": "src:Movies/Edit.html",
-    "Greek": "src:Greek",
-    "Lambda": "src:Lambda",
-    "List": "src:Movies/List",
-    "List.html": "src:Movies/List.html",
-    "MovieService": "src:Movies/MovieService",
-    "Start": "src:Start",
-    "Start.html": "src:Start.html",
-    "Yuml": "tools:Yuml",
+    "About": "src/About/About",
+    "About.html": "src/About/About.html",
+    "App": "src/App",
+    "App.html": "src/App.html",
+    "Configure": "src/Configure",
+    "CurrentDate": "src/Components/CurrentDate",
+    "Details": "src/Movies/Details",
+    "Details.html": "src/Movies/Details.html",
+    "Edit": "src/Movies/Edit",
+    "Edit.html": "src/Movies/Edit.html",
+    "Greek": "src/Greek",
+    "List": "src/Movies/List",
+    "List.html": "src/Movies/List.html",
+    "MovieService": "src/Movies/MovieService",
+    "Start": "src/Start",
+    "Start.html": "src/Start.html",
+    "Yuml": "tools/Yuml",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0",
     "aurelia-framework": "npm:aurelia-framework@1.0.3",
     "aurelia-http-client": "npm:aurelia-http-client@1.0.0",
     "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0",
     "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0",
     "aurelia-testing": "npm:aurelia-testing@1.0.0-beta.2.0.0",
+    "aurelia-validation": "npm:aurelia-validation@0.12.5",
     "babel": "npm:babel-core@5.8.38",
     "babel-polyfill": "npm:babel-polyfill@6.13.0",
     "babel-runtime": "npm:babel-runtime@5.8.38",
@@ -218,6 +217,14 @@ System.config({
       "aurelia-framework": "npm:aurelia-framework@1.0.3",
       "aurelia-logging": "npm:aurelia-logging@1.0.0",
       "aurelia-pal": "npm:aurelia-pal@1.0.0",
+      "aurelia-templating": "npm:aurelia-templating@1.1.0"
+    },
+    "npm:aurelia-validation@0.12.5": {
+      "aurelia-binding": "npm:aurelia-binding@1.0.4",
+      "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0",
+      "aurelia-logging": "npm:aurelia-logging@1.0.0",
+      "aurelia-pal": "npm:aurelia-pal@1.0.0",
+      "aurelia-task-queue": "npm:aurelia-task-queue@1.0.0",
       "aurelia-templating": "npm:aurelia-templating@1.1.0"
     },
     "npm:babel-polyfill@6.13.0": {

@@ -1,5 +1,5 @@
 import {inject} from "aurelia-framework";
-import Lambda from "Lambda";
+import {Lambda} from "Greek";
 import MovieService from "MovieService";
 import $ from "jquery";
 import "bootstrap";

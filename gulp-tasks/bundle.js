@@ -12,8 +12,8 @@ var config = {
         'App',
         'Configure',
         'Yuml',
-        'src:*.html!text',
-        'src:*.css!text'
+        'src/*.html!text',
+        'src/*.css!text'
       ],
       options: {
         inject: true,

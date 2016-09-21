@@ -1,17 +1,1 @@
-[
-    {
-        "id": 1,
-        "title": "Star Wars",
-        "releaseYear": 1983
-    },
-    {
-        "id": 11,
-        "title": "Star Trek",
-        "releaseYear": 1981
-    },
-    {
-        "id": 21,
-        "title": "Shrek",
-        "releaseYear": 2004
-    }
-]
+[{"id":1,"title":"Star Wars","releaseYear":"1975"},{"id":11,"title":"Star Trek","releaseYear":"1983"},{"id":21,"title":"Shrek","releaseYear":"2011"}]

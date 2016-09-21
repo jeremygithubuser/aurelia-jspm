@@ -5,12 +5,11 @@
     "command": "npm",
     "isShellCommand": true,
     "showOutput": "always",
-    "args": ["run-script"],
     "suppressTaskName": true,
     "tasks": [
         {
-            "taskName": "start:dev",
-            "args": [""]
+            "taskName": "prestart",
+            "args": ["run","prestart:dev"]
         }
     ]
 }
