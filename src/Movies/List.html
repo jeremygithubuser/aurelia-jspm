@@ -10,8 +10,12 @@
       <tr repeat.for="movie of movies">
         <td>${movie.title}</td>
         <td>${movie.releaseYear}</td>
-        <td><a route-href="route:Details; params.bind:{id:movie.id}" class="btn btn-default">
+        <td>
+          <a route-href="route:Details; params.bind:{id:movie.id}" class="btn btn-default">
           Details
+          </a>
+           <a route-href="route:Edit; params.bind:{id:movie.id}" class="btn btn-default">
+          Edit
           </a>
         </td>
       </tr>

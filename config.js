@@ -35,21 +35,23 @@ System.config({
     }
   },
   map: {
-    "App": "src:App",
-    "App.html": "src:App.html",
-    "Start": "src:Start",
-    "Start.html": "src:Start.html",
-    "List": "src:Movies/List",
-    "List.html": "src:Movies/List.html",
-    "Details": "src:Movies/Details",
-    "Details.html": "src:Movies/Details.html",
     "About": "src:About/About",
     "About.html": "src:About/About.html",
-    "MovieService": "src:Movies/MovieService",
+    "App": "src:App",
+    "App.html": "src:App.html",
     "Configure": "src:Configure",
     "CurrentDate": "src:CurrentDate",
+    "Details": "src:Movies/Details",
+    "Details.html": "src:Movies/Details.html",
+    "Edit": "src:Movies/Edit",
+    "Edit.html": "src:Movies/Edit.html",
     "Greek": "src:Greek",
     "Lambda": "src:Lambda",
+    "List": "src:Movies/List",
+    "List.html": "src:Movies/List.html",
+    "MovieService": "src:Movies/MovieService",
+    "Start": "src:Start",
+    "Start.html": "src:Start.html",
     "Yuml": "tools:Yuml",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0",
     "aurelia-framework": "npm:aurelia-framework@1.0.3",
@@ -63,6 +65,7 @@ System.config({
     "bootstrap": "github:twbs/bootstrap@3.3.7",
     "core-js": "npm:core-js@1.2.7",
     "css": "github:systemjs/plugin-css@0.1.27",
+    "font-awesome": "npm:font-awesome@4.6.3",
     "jquery": "npm:jquery@3.1.0",
     "text": "github:systemjs/plugin-text@0.0.8",
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -249,6 +252,9 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+    },
+    "npm:font-awesome@4.6.3": {
+      "css": "github:systemjs/plugin-css@0.1.27"
     },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"

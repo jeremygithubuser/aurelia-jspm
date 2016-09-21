@@ -1,5 +1,6 @@
 <template>
   <require from="bootstrap/css/bootstrap.css"></require>
+  <require from="font-awesome"></require>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -8,12 +9,15 @@
           </a>
       </div>
       <ul class="nav navbar-nav">
-          <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : '' }">
-              <a href.bind="row.href">${row.title}</a>
-          </li>
+        <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : '' }">
+          <a href.bind="row.href">${row.title}</a>
+        </li>
       </ul>
     </div>
   </nav>
+  <div class="container">
+    <i class="fa fa-spin fa-spinner" show.bind="router.isNavigating"></i>
+  </div>
   <compose view-model="CurrentDate"></compose>
   <router-view></router-view>
 </template>

@@ -10,7 +10,7 @@ export default class List {
     this.movieService = movieService;
   }
   activate() {
-      this.movieService.getMovies().then((movies) => {
+    return this.movieService.getMovies().then((movies) => {
       this.movies = movies;
     });
   }
