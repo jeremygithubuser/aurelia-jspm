@@ -40,6 +40,7 @@ System.config({
     "App.html": "src/App.html",
     "Configure": "src/Configure",
     "CurrentDate": "src/Components/CurrentDate",
+    "nav-menu": "src/Components/nav-menu",
     "Details": "src/Movies/Details",
     "Details.html": "src/Movies/Details.html",
     "Edit": "src/Movies/Edit",

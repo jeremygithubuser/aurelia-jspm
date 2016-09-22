@@ -10,6 +10,7 @@ export default class Start {
     }
     configureRouter(config, router) {
         this.router = router;
+        this.router.navTitle = "Moviesss";
         config.map([
             {route:["/","List"],moduleId:"List",title:"List",nav:true,name:"home"},
             {route:"About",moduleId:"About",title:"About",nav:true},
