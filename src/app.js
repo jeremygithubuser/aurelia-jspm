@@ -1,12 +1,12 @@
 import {inject} from "aurelia-framework";
-import {Lambda} from "Greek";
-import MovieService from "MovieService";
+import {Lambda} from "greek";
+import {MovieService} from "movieService";
 import $ from "jquery";
 import "bootstrap";
 /* start-non-standard */
 @inject(MovieService)
 /* end-non-standard */
-export default class App {
+export class App {
   constructor(movieService) {
     var a = new Lambda();
     var b = a.method();

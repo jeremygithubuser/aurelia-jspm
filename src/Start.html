@@ -1,13 +1,13 @@
 <template>
   <require from="bootstrap/css/bootstrap.css"></require>
-  <require from="font-awesome"></require>
-  <require from="nav-menu"></require>
 
   <nav-menu router.bind="router"></nav-menu>
 
   <div class="container">
-    <i class="fa fa-spin fa-spinner" show.bind="router.isNavigating"></i>
+    <spinner router.bind="router"></spinner>
   </div>
-  <compose view-model="CurrentDate"></compose>
+
   <router-view></router-view>
+
+  <current-date></current-date>
 </template>

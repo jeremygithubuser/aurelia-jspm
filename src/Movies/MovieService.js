@@ -4,7 +4,7 @@ import {HttpClient} from "aurelia-http-client";
 /* start-non-standard */
 @inject(HttpClient)
 /* end-non-standard */
-export default class MovieService {
+export class MovieService {
     constructor(httpService) {
         this.http = httpService;
     }

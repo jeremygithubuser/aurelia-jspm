@@ -1,7 +1,7 @@
 import {ComponentTester} from "aurelia-testing";
 import {bootstrap} from "aurelia-bootstrapper";
-import App from "App";
-import appView from "App.html!text";
+import {App} from "app";
+import appView from "app.html!text";
 
 describe('AppComponent', () => {
   let component;

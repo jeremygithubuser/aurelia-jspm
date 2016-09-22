@@ -1,4 +1,4 @@
-export default class CurrentDate {
+export class CurrentDate {
     constructor() {
         this.date = new Date().toDateString();
     }

@@ -9,9 +9,10 @@ var config = {
   bundles: {
     "dist/app-build": {           // bundle name/path. Must be within `baseURL`. Final path is: `baseURL/dist/app-build.js`.
       includes: [
-        'App',
-        'Configure',
-        'Yuml',
+        'app',
+        'start',
+        'configure',
+        'yuml',
         'src/*.html!text',
         'src/*.css!text'
       ],

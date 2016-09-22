@@ -14,12 +14,12 @@ System.config({
     "npm:*": "jspm_packages/npm/*"
   },
   packages: {
-    "Greek": {
+    "greek": {
       "main": "index.js",
       "map": {
-        "Gamma": "./Gamma.js",
-        "Beta": "./Beta.js",
-        "Lambda": "./Lambda.js"
+        "gamma": "./gamma.js",
+        "beta": "./beta.js",
+        "lambda": "./lambda.js"
       }
     }
   },
@@ -34,24 +34,26 @@ System.config({
     }
   },
   map: {
-    "About": "src/About/About",
-    "About.html": "src/About/About.html",
-    "App": "src/App",
-    "App.html": "src/App.html",
-    "Configure": "src/Configure",
-    "CurrentDate": "src/Components/CurrentDate",
+    "about": "src/About/about",
+    "about.html": "src/About/about.html",
+    "app": "src/app",
+    "app.html": "src/app.html",
+    "configure": "src/configure",
+    "current-date": "src/Components/current-date",
     "nav-menu": "src/Components/nav-menu",
-    "Details": "src/Movies/Details",
-    "Details.html": "src/Movies/Details.html",
-    "Edit": "src/Movies/Edit",
-    "Edit.html": "src/Movies/Edit.html",
-    "Greek": "src/Greek",
-    "List": "src/Movies/List",
-    "List.html": "src/Movies/List.html",
-    "MovieService": "src/Movies/MovieService",
-    "Start": "src/Start",
-    "Start.html": "src/Start.html",
-    "Yuml": "tools/Yuml",
+    "details": "src/Movies/details",
+    "details.html": "src/Movies/details.html",
+    "edit": "src/Movies/edit",
+    "edit.html": "src/Movies/edit.html",
+    "greek": "src/Greek",
+    "list": "src/Movies/list",
+    "list.html": "src/Movies/list.html",
+    "movieService": "src/Movies/movieService",
+    "custom-components": "src/Components/index",
+    "spinner": "src/Components/spinner",
+    "start": "src/start",
+    "start.html": "src/start.html",
+    "yuml": "tools/yuml",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0",
     "aurelia-framework": "npm:aurelia-framework@1.0.3",
     "aurelia-http-client": "npm:aurelia-http-client@1.0.0",

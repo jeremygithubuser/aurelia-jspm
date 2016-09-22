@@ -3,13 +3,13 @@ import {Router} from "aurelia-router";
 import {ValidationController} from "aurelia-validation";
 import {validateTrigger} from 'aurelia-validation';
 import {ValidationRules} from 'aurelia-validation';
-import MovieService from "MovieService";
+import {MovieService} from "movieService";
 import $ from "jquery";
 import "bootstrap";
 /* start-non-standard */
 @inject(MovieService, Router, NewInstance.of(ValidationController))
 /* end-non-standard */
-export default class Edit {
+export class Edit {
     constructor(movieService, router, validationController) {
         this.movieService = movieService;
         this.router = router;
@@ -35,7 +35,7 @@ export default class Edit {
             if (err.length === 0) {
                 this.movieService.save(this.movie).then(
                     statusCode => {
-                        let url = this.router.generate("Details", { id: this.movie.id });
+                        let url = this.router.generate("details", { id: this.movie.id });
                         this.router.navigate(url);
                     }
                 );

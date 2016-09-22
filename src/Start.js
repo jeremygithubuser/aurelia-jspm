@@ -4,18 +4,18 @@ import "bootstrap";
 /* start-non-standard */
 @inject()
 /* end-non-standard */
-export default class Start {
+export class Start {
     constructor() {
 
     }
     configureRouter(config, router) {
         this.router = router;
-        this.router.navTitle = "Moviesss";
+        this.router.navTitle = "Movie Manager";
         config.map([
-            {route:["/","List"],moduleId:"List",title:"List",nav:true,name:"home"},
-            {route:"About",moduleId:"About",title:"About",nav:true},
-            {route:"Details/:id",moduleId:"Details",title:"Details",name:"Details"},
-            {route:"Edit/:id",moduleId:"Edit",title:"Edit",name:"Edit"}
+            {route:["/","list"],moduleId:"list",title:"List",nav:true,name:"home"},
+            {route:"about",moduleId:"about",title:"About",nav:true},
+            {route:"details/:id",moduleId:"details",title:"Details",name:"details"},
+            {route:"edit/:id",moduleId:"edit",title:"Edit",name:"edit"}
         ]);
     }
     activate() {

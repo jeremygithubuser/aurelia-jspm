@@ -1,11 +1,11 @@
 import {inject} from "aurelia-framework";
-import MovieService from "MovieService";
+import {MovieService} from "movieService";
 import $ from "jquery";
 import "bootstrap";
 /* start-non-standard */
 @inject(MovieService)
 /* end-non-standard */
-export default class List {
+export class List {
   constructor(movieService) {
     this.movieService = movieService;
   }

@@ -1,4 +1,4 @@
-import {Gamma} from "Greek";
+import {Gamma} from "greek";
 export default class Lambda{
   constructor() {
     var a = new Gamma();

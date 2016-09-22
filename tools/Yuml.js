@@ -1,4 +1,4 @@
-//import "babel-polyfill";
+import "babel-polyfill";
 /*Depends on Object.values check compatibility table*/
 System.trace = true;
 window.showModuleRelationships = function () {
