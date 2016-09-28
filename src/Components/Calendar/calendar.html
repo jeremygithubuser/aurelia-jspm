@@ -1,0 +1,29 @@
+<template>
+    <require from="skip"></require>
+    <require from="top"></require>
+    <div class="row no-margin">
+        <div class="col-xs-2 no-gutter text-left"><a id="previousMonth" class="btn btn-info btn-sm" click.trigger="selectMonth(-1)"><span class="glyphicon glyphicon-chevron-left"></span></a></div>
+        <div class="col-xs-8 no-gutter text-center">
+            <h5 class="calendar-title">${selectedDay.dayName} ${selectedDay.dayOfMonth} ${monthName} ${year}</h5>
+        </div>
+        <div class="col-xs-2 no-gutter text-right"><a id="nextMonth" class="btn btn-info btn-sm" click.trigger="selectMonth(1)"><span class="glyphicon glyphicon-chevron-right"></span></a></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="table-responsive">
+                <table class="table table-bordered table-condensed" id="calendar">
+                    <thead class="text-primary">
+                        <tr>
+                            <th class="info" repeat.for="dayName of dayNames">${dayName}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr repeat.for="row of calendarDaysDt">
+                            <td repeat.for="day of row" click.trigger="selectDay(day)" class="${ day.isSelected ? 'success' : '' } ${ day.isActive ? '' : 'warning' }">${day.dayOfMonth}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</template>

@@ -14,6 +14,7 @@ export class Start {
         config.map([
             {route:["/","list"],moduleId:"list",title:"List",nav:true,name:"home"},
             {route:"about",moduleId:"about",title:"About",nav:true},
+            {route:"calendar",moduleId:"calendar",title:"Calendar",nav:true},
             {route:"details/:id",moduleId:"details",title:"Details",name:"details"},
             {route:"edit/:id",moduleId:"edit",title:"Edit",name:"edit"}
         ]);
