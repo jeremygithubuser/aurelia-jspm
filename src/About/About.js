@@ -7,6 +7,7 @@ import "bootstrap";
 export default class About {
     constructor() {
         this.message = "About me..";
+        this.selectedDay = null;
     }
     activate() {
 

@@ -2,11 +2,15 @@ import "babel-polyfill";
 import {Day, dayNames} from "day";
 import {monthNames} from "month";
 import {getNumberOfDaysInMonth} from "month";
+import {bindable} from "aurelia-framework";
+
 export class Calendar {
+    /* start-non-standard */
+    @bindable selectedDay = null;
+    /* end-non-standard */
     constructor() {
         this.date = new Date();
         this.dayNames = dayNames;
-        this.selectedDay = null;
         this.calendarDaysDt = [];
     }
     activate() {
@@ -14,6 +18,9 @@ export class Calendar {
         this.refresh();
 
     }
+    attached(){
+        this.refresh();
+    };
 
     refresh() {
         /* set the days of the current month */
@@ -29,7 +36,7 @@ export class Calendar {
         let nextMonthDays = this.getMonthDays(this.nextMonthDate, numberOfDaysInNextMonth);
 
         /* number of previous month additionnal days */
-        let numberOfprevMonthAdditionalDays = currentMonthDays[0].day;
+        let numberOfprevMonthAdditionalDays = currentMonthDays[0].day === 0 ? 7 : currentMonthDays[0].day;
         let numberOfnextMonthAdditionalDays = 42 - (numberOfprevMonthAdditionalDays + currentMonthDays.length);
 
         let calendarDays = this.getCalendarDays(currentMonthDays, numberOfprevMonthAdditionalDays, prevMonthDays, numberOfnextMonthAdditionalDays, nextMonthDays);
@@ -87,9 +94,9 @@ export class Calendar {
     getSelectedDay(days) {
         let currentDate = new Date();
         var activeDays = days
-        .filter(day => {
-            return day.isActive;
-        });
+            .filter(day => {
+                return day.isActive;
+            });
         var day = activeDays.find(day => {
             return (currentDate.getFullYear() == day.year && currentDate.getMonth() == day.month && currentDate.getDate() == day.dayOfMonth);
         });

@@ -1,6 +1,14 @@
 <template>
   <require from="bootstrap/css/bootstrap.css"></require>
-  <div class="container">
-    ${message}
+  <div class="ontainer-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <calendar selected-day.two-way="selectedDay"></calendar>
+      </div>
+      <div class="col-md-4"><h1>selected: ${selectedDay.dayOfMonth} </h1></div>
+      <div class="col-md-4"> ${message}</div>
+    </div>
+
   </div>
+
 </template>
