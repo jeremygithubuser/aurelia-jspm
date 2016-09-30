@@ -20,7 +20,7 @@ export class Calendar {
     }
     attached(){
         this.refresh();
-    };
+    }
 
     refresh() {
         /* set the days of the current month */

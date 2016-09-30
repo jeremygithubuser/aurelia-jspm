@@ -51,6 +51,7 @@ System.config({
     "movieService": "src/Movies/movieService",
     "custom-components": "src/Components/index",
     "spinner": "src/Components/spinner",
+    "day-calendar": "src/Components/Calendar/day-calendar",
     "calendar": "src/Components/Calendar/calendar",
     "day": "src/Components/Calendar/day",
     "month": "src/Components/Calendar/month",

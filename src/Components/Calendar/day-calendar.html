@@ -1,0 +1,93 @@
+<template>
+<div class="row no-margin">
+    <div class="col-xs-2 no-gutter">&nbsp;</div>
+    <div class="col-xs-8 no-gutter text-center"><h5 class="dayCalendar-title">${day.dayName} ${day.dayOfMonth} ${day.monthName} ${day.year}</h5></div>
+    <div class="col-xs-2 no-gutter text-right"><a class="btn btn-info btn-sm"><span class="glyphicon glyphicon-time"></span></a></div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="table-responsive">
+            <table class="table table-bordered table-condensed">
+                <thead class="text-primary">
+                    <tr>
+                        <th>AM</th>
+                        <th>30</th>
+                        <th>60</th>
+                        <th>PM</th>
+                        <th>30</th>
+                        <th>60</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>6h00</td>
+                        <td halfhour="600"  class="half-hour"></td>
+                        <td halfhour="630"  class="half-hour"></td>
+                        <td>14h00</td>
+                        <td halfhour="1400" class="half-hour"></td>
+                        <td halfhour="1430" class="half-hour"></td>
+                    </tr>
+                    <tr>
+                        <td>7h00</td>
+                        <td halfhour="700" class="half-hour"></td>
+                        <td halfhour="730" class="half-hour"></td>
+                        <td>15h00</td>
+                        <td halfhour="1500" class="half-hour"></td>
+                        <td halfhour="1530" class="half-hour"></td>
+                    </tr>
+                    <tr>
+                        <td>8h00</td>
+                        <td halfhour="800" class="half-hour"></td>
+                        <td halfhour="830" class="half-hour"></td>
+                        <td>16h00</td>
+                        <td halfhour="1600" class="half-hour"></td>
+                        <td halfhour="1630" class="half-hour"></td>
+                    </tr>
+                    <tr>
+                        <td>9h00</td>
+                        <td halfhour="900" class="half-hour"></td>
+                        <td halfhour="930" class="half-hour"></td>
+                        <td>17h00</td>
+                        <td halfhour="1700" class="half-hour"></td>
+                        <td halfhour="1730" class="half-hour"></td>
+                    </tr>
+                    <tr>
+                        <td>10h00</td>
+                        <td halfhour="1000" class="half-hour"></td>
+                        <td halfhour="1030" class="half-hour"></td>
+                        <td>18h00</td>
+                        <td halfhour="1800" class="half-hour"></td>
+                        <td halfhour="1830" class="half-hour"></td>
+                    </tr>
+                    <tr>
+                        <td>11h00</td>
+                        <td halfhour="1100" class="half-hour"></td>
+                        <td halfhour="1130" class="half-hour"></td>
+                        <td>19h00</td>
+                        <td halfhour="1900" class="half-hour"></td>
+                        <td halfhour="1930" class="half-hour"></td>
+                    </tr>
+                    <tr>
+                        <td>12h00</td>
+                        <td halfhour="1200" class="half-hour"></td>
+                        <td halfhour="1230" class="half-hour"></td>
+                        <td>20h00</td>
+                        <td halfhour="2000" class="half-hour"></td>
+                        <td halfhour="2030" class="half-hour"></td>
+                    </tr>
+                    <tr>
+                        <td>13h00</td>
+                        <td halfhour="1300" class="half-hour""></td>
+                        <td halfhour="1330" class="half-hour""></td>
+                        <td>21h00</td>
+                        <td halfhour="2100" class="half-hour""></td>
+                        <td halfhour="2130" class="half-hour""></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</template>
