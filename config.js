@@ -26,11 +26,6 @@ System.config({
   meta: {
     "src/*.html": {
       "loader": "text"
-    },
-    "Yuml": {
-      "deps": [
-        "babel-polyfill"
-      ]
     }
   },
   map: {
@@ -73,12 +68,15 @@ System.config({
     "start.html": "src/start.html",
     "text": "github:systemjs/plugin-text@0.0.8",
     "top": "src/Components/Calendar/top",
-    "yuml": "tools/yuml",
+    "yuml": "github:jeremygithubuser/systemjs-yuml@master",
     "github:jeremygithubuser/aurelia-calendar-component@master": {
       "aurelia-dates": "github:jeremygithubuser/aurelia-dates@master",
       "aurelia-framework": "npm:aurelia-framework@1.0.5",
       "babel-polyfill": "npm:babel-polyfill@6.16.0",
       "bootstrap": "github:twbs/bootstrap@3.3.7"
+    },
+    "github:jeremygithubuser/systemjs-yuml@master": {
+      "babel-polyfill": "npm:babel-polyfill@6.16.0"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
