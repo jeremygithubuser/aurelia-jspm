@@ -3,8 +3,8 @@ export function configure(aurelia) {
     .standardConfiguration()
     .developmentLogging()
     .plugin('aurelia-validation')
-    .plugin('custom-components')
-    .plugin('aurelia-calendar-component') 
+    .plugin('aurelia-calendar-component')
+    .plugin('aurelia-calendar-day-component') 
     .plugin('aurelia-navigation-component');
   aurelia.start().then(() => aurelia.setRoot("start"));
 }

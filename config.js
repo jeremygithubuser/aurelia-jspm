@@ -13,6 +13,7 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
+
   packages: {
     "greek": {
       "main": "index.js",
@@ -23,11 +24,13 @@ System.config({
       }
     }
   },
+
   meta: {
     "src/*.html": {
       "loader": "text"
     }
   },
+
   map: {
     "about": "src/About/about",
     "about.html": "src/About/about.html",
@@ -35,8 +38,10 @@ System.config({
     "app.html": "src/app.html",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0",
     "aurelia-calendar-component": "github:jeremygithubuser/aurelia-calendar-component@master",
+    "aurelia-calendar-day-component": "github:jeremygithubuser/aurelia-calendar-day-component@master",
     "aurelia-framework": "npm:aurelia-framework@1.0.5",
     "aurelia-http-client": "npm:aurelia-http-client@1.0.0",
+    "aurelia-navigation-component": "github:jeremygithubuser/aurelia-navigation-component@master",
     "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0",
     "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0",
     "aurelia-testing": "npm:aurelia-testing@1.0.0-beta.2.0.0",
@@ -47,32 +52,33 @@ System.config({
     "bootstrap": "github:twbs/bootstrap@3.3.7",
     "configure": "src/configure",
     "core-js": "npm:core-js@1.2.7",
-    "css": "github:systemjs/plugin-css@0.1.27",
-    "current-date": "src/Components/current-date",
-    "custom-components": "src/Components/index",
-    "day-calendar": "src/Components/Calendar/day-calendar",
+    "css": "github:systemjs/plugin-css@0.1.30",
     "details": "src/Movies/details",
     "details.html": "src/Movies/details.html",
     "edit": "src/Movies/edit",
     "edit.html": "src/Movies/edit.html",
-    "font-awesome": "npm:font-awesome@4.6.3",
     "greek": "src/Greek",
     "jquery": "npm:jquery@3.1.1",
     "list": "src/Movies/list",
     "list.html": "src/Movies/list.html",
     "movieService": "src/Movies/movieService",
-    "skip": "src/Components/Calendar/skip",
-    "spinner": "src/Components/spinner",
     "start": "src/start",
     "start.html": "src/start.html",
     "text": "github:systemjs/plugin-text@0.0.8",
-    "top": "src/Components/Calendar/top",
     "yuml": "github:jeremygithubuser/systemjs-yuml@master",
     "github:jeremygithubuser/aurelia-calendar-component@master": {
       "aurelia-dates": "github:jeremygithubuser/aurelia-dates@master",
       "aurelia-framework": "npm:aurelia-framework@1.0.5",
       "babel-polyfill": "npm:babel-polyfill@6.16.0",
       "bootstrap": "github:twbs/bootstrap@3.3.7"
+    },
+    "github:jeremygithubuser/aurelia-calendar-day-component@master": {
+      "aurelia-framework": "npm:aurelia-framework@1.0.5"
+    },
+    "github:jeremygithubuser/aurelia-navigation-component@master": {
+      "aurelia-framework": "npm:aurelia-framework@1.0.2",
+      "bootstrap": "github:twbs/bootstrap@3.3.7",
+      "font-awesome": "npm:font-awesome@4.6.3"
     },
     "github:jeremygithubuser/systemjs-yuml@master": {
       "babel-polyfill": "npm:babel-polyfill@6.16.0"
@@ -132,6 +138,17 @@ System.config({
     },
     "npm:aurelia-event-aggregator@1.0.0": {
       "aurelia-logging": "npm:aurelia-logging@1.0.0"
+    },
+    "npm:aurelia-framework@1.0.2": {
+      "aurelia-binding": "npm:aurelia-binding@1.0.6",
+      "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0",
+      "aurelia-loader": "npm:aurelia-loader@1.0.0",
+      "aurelia-logging": "npm:aurelia-logging@1.0.0",
+      "aurelia-metadata": "npm:aurelia-metadata@1.0.0",
+      "aurelia-pal": "npm:aurelia-pal@1.0.0",
+      "aurelia-path": "npm:aurelia-path@1.1.1",
+      "aurelia-task-queue": "npm:aurelia-task-queue@1.1.0",
+      "aurelia-templating": "npm:aurelia-templating@1.1.1"
     },
     "npm:aurelia-framework@1.0.5": {
       "aurelia-binding": "npm:aurelia-binding@1.0.6",
@@ -256,7 +273,7 @@ System.config({
       "base64-js": "npm:base64-js@0.0.8",
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "ieee754": "npm:ieee754@1.1.6",
+      "ieee754": "npm:ieee754@1.1.8",
       "isarray": "npm:isarray@1.0.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
@@ -273,7 +290,7 @@ System.config({
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
     "npm:font-awesome@4.6.3": {
-      "css": "github:systemjs/plugin-css@0.1.27"
+      "css": "github:systemjs/plugin-css@0.1.30"
     },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
