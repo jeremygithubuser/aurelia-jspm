@@ -4,6 +4,7 @@ export function configure(aurelia) {
     .developmentLogging()
     .plugin('aurelia-validation')
     .plugin('custom-components')
-    .plugin('aurelia-calendar-component'); 
+    .plugin('aurelia-calendar-component') 
+    .plugin('aurelia-navigation-component');
   aurelia.start().then(() => aurelia.setRoot("start"));
 }

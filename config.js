@@ -61,7 +61,6 @@ System.config({
     "list": "src/Movies/list",
     "list.html": "src/Movies/list.html",
     "movieService": "src/Movies/movieService",
-    "nav-menu": "src/Components/nav-menu",
     "skip": "src/Components/Calendar/skip",
     "spinner": "src/Components/spinner",
     "start": "src/start",
