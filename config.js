@@ -13,6 +13,7 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
+
   packages: {
     "greek": {
       "main": "index.js",
@@ -23,11 +24,13 @@ System.config({
       }
     }
   },
+
   meta: {
     "src/*.html": {
       "loader": "text"
     }
   },
+
   map: {
     "about": "src/About/about",
     "about.html": "src/About/about.html",
@@ -36,6 +39,7 @@ System.config({
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0",
     "aurelia-calendar-component": "github:jeremygithubuser/aurelia-calendar-component@master",
     "aurelia-calendar-day-component": "github:jeremygithubuser/aurelia-calendar-day-component@master",
+    "aurelia-footer-component": "github:jeremygithubuser/aurelia-footer-component@master",
     "aurelia-framework": "npm:aurelia-framework@1.0.5",
     "aurelia-http-client": "npm:aurelia-http-client@1.0.0",
     "aurelia-navigation-component": "github:jeremygithubuser/aurelia-navigation-component@master",
@@ -71,6 +75,10 @@ System.config({
     },
     "github:jeremygithubuser/aurelia-calendar-day-component@master": {
       "aurelia-framework": "npm:aurelia-framework@1.0.5"
+    },
+    "github:jeremygithubuser/aurelia-footer-component@master": {
+      "aurelia-framework": "npm:aurelia-framework@1.0.2",
+      "bootstrap": "github:twbs/bootstrap@3.3.7"
     },
     "github:jeremygithubuser/aurelia-navigation-component@master": {
       "aurelia-framework": "npm:aurelia-framework@1.0.2",

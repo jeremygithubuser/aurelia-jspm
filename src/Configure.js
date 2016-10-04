@@ -4,7 +4,8 @@ export function configure(aurelia) {
     .developmentLogging()
     .plugin('aurelia-validation')
     .plugin('aurelia-calendar-component')
-    .plugin('aurelia-calendar-day-component') 
+    .plugin('aurelia-calendar-day-component')
+    .plugin('aurelia-footer-component')  
     .plugin('aurelia-navigation-component');
   aurelia.start().then(() => aurelia.setRoot("start"));
 }
