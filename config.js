@@ -13,7 +13,6 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-
   packages: {
     "greek": {
       "main": "index.js",
@@ -24,13 +23,11 @@ System.config({
       }
     }
   },
-
   meta: {
     "src/*.html": {
       "loader": "text"
     }
   },
-
   map: {
     "about": "src/About/about",
     "about.html": "src/About/about.html",

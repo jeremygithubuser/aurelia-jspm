@@ -1,12 +1,11 @@
 <template>
   <require from="bootstrap/css/bootstrap.css"></require>
 
-  <nav-menu router.bind="router"></nav-menu>
+  <nav-menu router.bind="router" user.bind="user" logout.bind="logout"></nav-menu>
 
-  <div class="container">
+  <div class="container" style="padding-top:70px;">
     <spinner router.bind="router"></spinner>
+    <router-view></router-view>
   </div>
-
-  <router-view></router-view>
 
 </template>
